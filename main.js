@@ -9,8 +9,8 @@ init();
 function init() {
 
     // define fetch links
-    const link1 = "http://petlatkea.dk/2019/hogwartsdata/students.json";
-    const link2 = "http://petlatkea.dk/2019/hogwartsdata/families.json";
+    const link1 = "https://petlatkea.dk/2019/hogwartsdata/students.json";
+    const link2 = "https://petlatkea.dk/2019/hogwartsdata/families.json";
 
     JSONFetch(link1, link2);
     bodyEventListeners();
