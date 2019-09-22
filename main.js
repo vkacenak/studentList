@@ -88,7 +88,7 @@ function createObjects(data, blood) {
 
     });
 
-    //INJECT HAGRID TO STUDENTS
+    //INJECT ME TO STUDENTS
     hackingTime();
 
     countStudents(studentListArr);
@@ -220,7 +220,8 @@ function displayEdit(studentDetail) {
 function removeStudent(studentDetail) {
     // find studentobject in whole student list
     let index = studentListArr.indexOf(studentDetail);
-    if (studentDetail.firstName == "Hagrid") {
+    if (studentDetail.firstName == "Viktor")  // this could also be done with specific id or specific attribute, before hacking i checked the school system and knew there are no other Viktors
+     {
         let deleteBtn = document.querySelector(".detail-delete");
         deleteBtn.style.position = "fixed";
         deleteBtn.style.top = (Math.random() * 100) + "%";
@@ -525,9 +526,9 @@ function hackingTime() {
     // create new Student object and populate it
     const hacker = Object.create(Student);
     hacker.id = create_UUID();
-    hacker.firstName = "Hagrid";
-    hacker.fullName = "Hagrid"
-    hacker.lastName = "";
+    hacker.firstName = "Viktor";
+    hacker.fullName = ""
+    hacker.lastName = "Kacenak";
     hacker.house = "Gryffindor";
     hacker.isPure = "yes";
 
