@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+    <main>
+        <section class="list">
+            <div class="list__heading">
+                <h2>Student List</h2>
+                <h1>Hogwarts 1991</h1>
+            </div>
+            <div class="list__table">
+                <div class="list__table__head table">
+                    <p data-value=""> </p>
+                    <p data-value=""> </p>
+                    <p class="sort-element" data-value="firstName">First Name <span class="sort-char">&#x25BC;</span>
+                    </p>
+                    <p class="sort-element" data-value="lastName">Last Name <span class="sort-char">&#x25BC;</span></>
+                        <p class="sort-element" data-value="house">House <span class="sort-char">&#x25BC;</span></p>
+                        <p class="sort-element" data-value="isPure">Blood <span class="sort-char">&#x25BC;</span></p>
+                        <p data-value="isPrefect">Prefect <span class="sort-char">&#x25BC;</span></p>
+                        <p data-value="isInquisitory">Inquisitory clan <span class="sort-char">&#x25BC;</span></p>
+
+
+                </div>
+                <div class="list__table__wrapper">
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="info__students">
+                <p class="info__students__head">Students</p>
+                <ul>
+                    <li class="green-highlight filter-element" data-value="Attending">Attending: </li>
+                    <li class="green-highlight attending-value">100</li>
+                    <li class="filter-element" data-value="Gryffindor">Griffindor:</li>
+                    <li class="gryffindor-value">30</li>
+                    <li class="filter-element" data-value="Slytherin">Slytherin: </li>
+                    <li class="slytherin-value">30</li>
+                    <li class="filter-element" data-value="Hufflepuff">Hufflepuff: </li>
+                    <li class="hufflepuff-value">30</li>
+                    <li class="filter-element" data-value="Ravenclaw">Ravenclaw: </li>
+                    <li class="ravenclaw-value">30</li>
+                    <li class="red-highlight expelled-element">Expelled</li>
+                    <li class="red-highlight expelled-value">3</li>
+                </ul>
+            </div>
+            <div class="info__details">
+                <p class="info__details__head">Student details</p>
+                <div class="info__details__wrapper">
+               
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <div class="modal-place"></div>
+
+</body>
+<template class="modal-template">
+    <div class="modal">
+        <p class="close">Close</p>
+        <h1>There are already 2 prefects, select which one you want to remove</h1>
+        <p class="prefect-name"></p>
+        <p class="prefect-name"></p>
+    </div>
+</template>
+<template class="edit-template">
+        <div class="info__details__body">
+                <img src="images/malfoy_d.png" alt="" class="info__details__photo">
+                <img src="icons/slytherin.png" alt="" class="info__details__crest">
+                <div class="info__details__desc">
+                    <p>Name:</p>
+                    <p>Blood:</p>
+                    <p>Inquisitory clan:</p>
+                    <p>Prefect:</p>
+                </div>
+                <div class="info__details__data">
+                    <p class="detail-fullName">Draco Malfoy</p>
+                    <img src="icons/pure-blood.png" class="detail-blood">
+                    <p class="detail-inquisitory">YES</p>
+                    <img src="icons/badge.png" class="detail-badge">
+                </div>
+               
+               
+                <button class="red-highlight detail-delete">Expell</button>
+                <img src="icons/expelled.png" alt="" class="expelled-img">
+            </div>
+</template>
+<template class="student-template">
+    <div class="list__table__student table">
+        <img src="icons/not-active.png" class="student-active">
+        <img src="images/thomas_d.png" class="student-photo">
+        <p class="student-firstName">Thomas </p>
+        <p class="student-lastName">Dean </p>
+        <p class="student-house">Chrabromil </p>
+        <img src="icons/pure-blood.png" class="student-blood">
+        <img src="icons/badge.png" class="student-badge">
+        <p class="student-inquisitory">YES</p>
+        <p class="student-edit"></p>
+    </div>
+
+</template>
+<script src="main.js"></script>
+
+</html>
